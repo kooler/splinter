@@ -2,15 +2,16 @@
 
 A staggered 65% split keyboard.
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0"/></a>
 
-![Splinter Keyboard](https://github.com/kooler/splinter/blob/main/res/splinterkb-render.png?raw=true)
+<img src="https://github.com/kooler/splinter/blob/main/res/splinterkb-render.png?raw=true" alt="Splinter Keyboard"/>
 
 
 ## Features
 
 - 65% layout
 - Hot-swap sockets
+- Wired or wireless option
 
 ## Files
 
@@ -23,62 +24,79 @@ A staggered 65% split keyboard.
 ## Building
 
 ### PCB
-PCB is made to be ordered with assembly on JLCPCB. It contains Kailh switches, diodes and couple of 4.7 ohm resistors with references to respective components in JLCPCB. You might need to update those references if using another manufacturer, but for JLCPCB you can just upload the package and order the PCB. 
+PCB is made to be ordered with assembly on JLCPCB. It contains Kailh sockets, diodes and couple of 4.7 ohm resistors with references to respective components in JLCPCB. You might need to update those references if using another manufacturer, but for JLCPCB you can just upload the package and order the PCB. 
 
 This is what you will receive:
-![Splinter Keyboard PCB](https://github.com/kooler/splinter/blob/main/res/pcb.jpg?raw=true)
+<img src="https://github.com/kooler/splinter/blob/main/res/pcb.jpg?raw=true" alt="Splinter Keyboard PCB"/>
 
 Wired version of the keyboard runs on Pro Micro, for wireless I used nice!nano.
 
-Besides those you'd need:
-1. TRRS OR 4 pin JST connector PCB for connecting two halfs
+#### Components
 
-PCB is made for this kind of PCB mounted audio jack port:
-![Female trrs](https://github.com/kooler/splinter/blob/main/res/audio-jack.jpg.jpg?raw=true)
-![Female trrs dimentions](https://github.com/kooler/splinter/blob/main/res/audio-jack-3.5mm-female-trrs-pj-313b-dimensions.jpg?raw=true)
+##### 1. TRRS OR 4 pin JST connector PCB for connecting two halves (wired only) 
+
+Two halves can be connected either via TRRS cable or JST-XH-4p cable. 
+
+**IMPORTANT:** If using TRRS do not connect both halves while the keyboard is powered to avoid shorting it.
+
+The following TRRS connector is supported:
+
+<img src="https://github.com/kooler/splinter/blob/main/res/audio-jack.jpg?raw=true" height=200 alt="Female TRRS"/><img src="https://github.com/kooler/splinter/blob/main/res/audio-jack-3.5mm-female-trrs-pj-313b-dimensions.jpg?raw=true" alt="Female TRRS dimensions" height=200/>
 
 or a JST-XH-4p 90 degree:
-![JST-XH-4p](https://github.com/kooler/splinter/blob/main/res/jst-xh-4p.jpg?raw=true)
 
-2. 2 x push buttons (optional) to make flashing easier:
-![Push button](https://github.com/kooler/splinter/blob/main/res/pushbutton-4pin-6x6x6mm.jpg?raw=true)
+<img src="https://github.com/kooler/splinter/blob/main/res/jst-xh-4p.jpg?raw=true" alt="JST-XH-4p" height=200/>
 
-For wireless you'd additionally need (and obviously don't need #1):
-3. 2 x JST-PH-2p connectors for the battery connection:
-![JST-PH-2p](https://github.com/kooler/splinter/blob/main/res/jst-ph-2p.jpg?raw=true)
+##### 2. 2 x push buttons to make flashing easier
 
-4. 2 x lp503035 battery
-![battery](https://github.com/kooler/splinter/blob/main/res/lp503035.jpg?raw=true)
+Optional, you can also short two pins if not planning to flash that too often. 
 
-5. 2 x mini rocker switch for turning each side on/off
-![rocker switch](https://github.com/kooler/splinter/blob/main/res/rocker-switch.jpg?raw=true)
+<img src="https://github.com/kooler/splinter/blob/main/res/pushbutton-4pin-6x6x6mm.jpg?raw=true" alt="Push button" height=200/>
 
-##### Soldering
+##### 3. 2 x JST-PH-2p connectors for the battery connection (wireless only) 
 
-Soldering the PCB is a bit tricky as we'd need the Pro mini or nice!nano headers to be mega short so that buttons can be placed on the other side of the PCB on top of them.
+<img src="https://github.com/kooler/splinter/blob/main/res/jst-ph-2p.jpg?raw=true" alt="JST-PH-2p" height=200/>
 
-The controller is soldered on the back of the board above Kailh switches. To make life easier I would suggest to use this kind of pins that have a small spacer in between the board and the PCB: 
-![pin headers](https://github.com/kooler/splinter/blob/main/res/headers-2.54mm-40p.jpg?raw=true)
+##### 4. 2 x lp503035 battery (wireless only) 
+
+<img src="https://github.com/kooler/splinter/blob/main/res/lp503035.jpg?raw=true" alt="battery" height=200/>
+
+##### 5. 2 x mini rocker switch for turning each side on/off (wireless only) 
+
+<img src="https://github.com/kooler/splinter/blob/main/res/rocker-switch.jpg?raw=true" alt="rocker switch" height=200/>
+
+#### Soldering
+
+Soldering the PCB is a bit tricky as we'd need the Pro Micro or nice!nano headers to be mega short so that switches can be placed on the other side of the PCB on top of them.
+
+The controller is soldered on the back of the board above Kailh sockets. To make life easier I would suggest to use this kind of pins that have a small spacer in between the board and the PCB: 
+
+<img src="https://github.com/kooler/splinter/blob/main/res/headers-2.54mm-40p.jpg?raw=true" alt="pin headers" height=200/>
 
 if you don't want to solder the controller directly to the PCB you could also use a female headers like this and then insert the headers with spacer into them. It will work but will obviously take more space:
-![reusing controller](https://github.com/kooler/splinter/blob/main/res/reusable-controller.jpg?raw=true)
-![reusing controller with controller](https://github.com/kooler/splinter/blob/main/res/reusable-controller2.jpg?raw=true)
 
-Once you have controller with pin header, insert it into board, it will look something like this:
-![board-before](https://github.com/kooler/splinter/blob/main/res/board-before.jpg?raw=true)
+<img src="https://github.com/kooler/splinter/blob/main/res/reusable_controller.jpg?raw=true" alt="reusing controller" height=200/>
+<img src="https://github.com/kooler/splinter/blob/main/res/reusable_controller2.jpg?raw=true" alt="reusing controller with controller" height=200/>
 
-*VERY IMPORTANT:* Before doing next step: USE EYE PROTECTION! Those tiny pin ends fly like little bullets and one of them might (and will) hit your eyes. So protect them!
+Once you have pin headers soldered to the controller, insert it into the board, it will look something like this:
 
-we'd need to shave those pins so that they are not sticking from the PCB because otherwise the switch will not be able to sit on top of them. Just use a flush cutter tool:
-![tool](https://github.com/kooler/splinter/blob/main/res/tool.jpg?raw=true)
+<img src="https://github.com/kooler/splinter/blob/main/res/board-before.jpg?raw=true" alt="board-before" height=200/>
 
-*VERY IMPORTANT:* USE EYE PROTECTION!
+**VERY IMPORTANT:** Before doing next step: USE EYE PROTECTION! 
 
-Just cut them one by one. You'd want to endup with something like this:
-![board after cut](https://github.com/kooler/splinter/blob/main/res/board-after-cut.jpg?raw=true)
+Now we'd need to shave those pins so that they are not sticking from the PCB because otherwise the switch will not be able to sit on top of them. Just use a flush cutter tool:
 
-Now it's ready to be soldered. After soldering the controller, on the same side solder TRRS/JST4 or battery JST connectors. All those goes to the back of the board.
-![board after soldered](https://github.com/kooler/splinter/blob/main/res/board-after-soldered.jpg?raw=true)
+<img src="https://github.com/kooler/splinter/blob/main/res/tool.jpg?raw=true" alt="tool" height=200/>
+
+**VERY IMPORTANT:** REALLY, USE EYE PROTECTION! Those tiny pin ends fly like little bullets and one of them might (and will) hit your eyes. So protect them!
+
+Just cut them one by one. You'd want to end up with something like this:
+
+<img src="https://github.com/kooler/splinter/blob/main/res/board-after-cut.jpg?raw=true" alt="board after cut" height=200/>
+
+Now it's ready to be soldered. After soldering the controller, on the same side solder TRRS/JST4 or battery JST connectors. All those go to the back of the board.
+
+<img src="https://github.com/kooler/splinter/blob/main/res/board-after-soldered.jpg?raw=true" alt="board after soldered" height=200/>
 
 That's it for soldering. Now check the firmware section below.
 
@@ -107,7 +125,7 @@ qmk flash -kb splinter/65/rev1 -km default -e VIA_ENABLE=yes -bl avrdude-split-l
 qmk flash -kb splinter/65/rev1 -km default -e VIA_ENABLE=yes -bl avrdude-split-right
 ```
 
-You can also use prebuild binaries in `firmware/`.
+You can also use prebuilt binaries in `firmware/`.
 
 ### Case
 Print the STL files in `stl/` with 0.2mm layer height and 40% infill recommended.
