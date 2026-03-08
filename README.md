@@ -20,7 +20,7 @@ A staggered 65% split keyboard.
 
 ### PCB
 PCB is made to be ordered with assembly on JLCPCB. It contains Kailh switches, diodes and couple of 4.7 ohm resistors with reference to respective components in JLCPCB. You might need to update those references if using another manufacturer, but for JLCPCB you can just upload the package and order the PCB. This is what you will receive:
-![Splinter Keyboard PCB](https://github.com/kooler/splinter/blob/main/image.jpg?raw=true)
+![Splinter Keyboard PCB](https://github.com/kooler/splinter/blob/main/res/pcb.jpg?raw=true)
 
 
 ### Case
