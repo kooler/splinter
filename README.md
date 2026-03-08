@@ -4,6 +4,9 @@ A staggered 65% split keyboard.
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 
+![Splinter Keyboard](https://github.com/kooler/splinter/blob/main/res/splinterkb-render.png?raw=true)
+
+
 ## Features
 
 - 65% layout
@@ -19,7 +22,9 @@ A staggered 65% split keyboard.
 ## Building
 
 ### PCB
-PCB is made to be ordered with assembly on JLCPCB. It contains Kailh switches, diodes and couple of 4.7 ohm resistors with reference to respective components in JLCPCB. You might need to update those references if using another manufacturer, but for JLCPCB you can just upload the package and order the PCB. This is what you will receive:
+PCB is made to be ordered with assembly on JLCPCB. It contains Kailh switches, diodes and couple of 4.7 ohm resistors with references to respective components in JLCPCB. You might need to update those references if using another manufacturer, but for JLCPCB you can just upload the package and order the PCB. 
+
+This is what you will receive:
 ![Splinter Keyboard PCB](https://github.com/kooler/splinter/blob/main/res/pcb.jpg?raw=true)
 
 
