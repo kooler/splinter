@@ -98,6 +98,8 @@ Now it's ready to be soldered. After soldering the controller, on the same side 
 
 <img src="https://github.com/kooler/splinter/blob/main/res/board-after-soldered.jpg?raw=true" alt="board after soldered" height=200/>
 
+After that solder the reset push button (if you are adding it) and rocker switch for wireless version.
+
 That's it for soldering. Now check the firmware section below.
 
 ### Firmware
