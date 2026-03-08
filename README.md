@@ -127,8 +127,14 @@ qmk flash -kb splinter/65/rev1 -km default -e VIA_ENABLE=yes -bl avrdude-split-r
 
 You can also use prebuilt binaries in `firmware/`.
 
+#### ZMK
+
+ZMK Firmware available in this repo: https://github.com/kooler/splinter-zmk
+
 ### Case
-Print the STL files in `stl/` with 0.2mm layer height and 40% infill recommended.
+The simple case contains of two parts and uses m2 inserts and bolts for connection.
+
+Print the STL files in `stl/`.
 
 ## License
 
