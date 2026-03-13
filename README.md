@@ -18,7 +18,7 @@ A staggered 65% split keyboard.
 | File | Description |
 |------|-------------|
 | `gerber/` | PCB manufacturing files |
-| `stl/` | 3D printable case and plate files |
+| `step/` | 3D printable case and plate files |
 | `firmware/` | QMK and ZMK firmware builds |
 
 ## Building
@@ -134,9 +134,11 @@ You can also use prebuilt binaries in `firmware/`.
 ZMK Firmware available in this repo: https://github.com/kooler/splinter-zmk
 
 ### Case
-The simple case contains of two parts and uses m2 inserts and bolts for connection.
+The simple case can be completely 3rd printed, it contains two parts for each side and uses m2 inserts and bolts for connection.
 
-Print the STL files in `stl/`.
+<img src="https://github.com/kooler/splinter/blob/main/res/case.jpeg?raw=true" alt="3d printed case components" height=200/>
+
+Print the STEP files in `step/`.
 
 ## License
 
