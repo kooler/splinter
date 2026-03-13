@@ -140,6 +140,8 @@ The simple case can be completely 3rd printed, it contains two parts for each si
 
 Print the STEP files in `step/`.
 
+If you'd like to design you own, in step folder you can find step file with PCB and components, so that you can design your case around it.
+
 ## License
 
 Hardware design files (Gerbers, STEPs, schematics) are licensed under  
