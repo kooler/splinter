@@ -142,7 +142,7 @@ Print the STEP files in `step/`.
 
 ## License
 
-Hardware design files (Gerbers, STLs, schematics) are licensed under  
+Hardware design files (Gerbers, STEPs, schematics) are licensed under  
 [CC BY-NC-SA 4.0](LICENSE) © 2026 [Your Name]
 
 ✅ Personal builds allowed  
