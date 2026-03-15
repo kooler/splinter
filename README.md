@@ -145,7 +145,7 @@ If you'd like to design you own, in step folder you can find step file with PCB 
 ## License
 
 Hardware design files (Gerbers, STEPs, schematics) are licensed under  
-[CC BY-NC-SA 4.0](LICENSE) © 2026 [Your Name]
+[CC BY-NC-SA 4.0](LICENSE) © 2026 [SplinterKB]
 
 ✅ Personal builds allowed  
 ✅ Modifications allowed under the same license  
